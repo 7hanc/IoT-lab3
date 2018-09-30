@@ -8,15 +8,15 @@
 > Creating Application, Descriptor Container, Data Container, Descriptor ContentInstance, Data ContentInstance
 
 * Step1: Start the OM2M IN-CSE
-  * IN-CSE product directory : `org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/linux/gtk/x86_64`
-  * Open a terminal, go to the product directory and input the command: `shstart.sh`
-  * After starting it successfully, you will see “CSE Started”
+   * IN-CSE product directory : `org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/linux/gtk/x86_64`
+   * Open a terminal, go to the product directory and input the command: `shstart.sh`
+   * After starting it successfully, you will see “CSE Started”
  * Step2: Start the OM2M MN-CSE
-  * MN-CSE product directory : `org.eclipse.om2m/org.eclipse.om2m.site.mn-cse/target/products/mn-cse/linux/gtk/x86_64`
-  * Open another terminal, go to the product directory and input the command: `shstart.sh`
-  * After starting it successfully, you will see “CSE Started”
+   * MN-CSE product directory : `org.eclipse.om2m/org.eclipse.om2m.site.mn-cse/target/products/mn-cse/linux/gtk/x86_64`
+   * Open another terminal, go to the product directory and input the command: `shstart.sh`
+   * After starting it successfully, you will see “CSE Started”
  * Step 3: Open postman
-  * Retrieve a resource: 
+   * Retrieve a resource: 
   <table>
     <tr><td> URL</td><td> http://127.0.0.1:8282/~/mn-cse </td></tr>
     <tr><td>Method</td><td>GET</td></tr>
