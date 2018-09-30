@@ -29,7 +29,7 @@
     <tr><td> URL</td><td> http://127.0.0.1:8282/~/mn-cse </td></tr>
     <tr><td>Method</td><td>POST</td></tr>
     <tr><td> Header </td><td> X-M2M-Origin: admin:admin <br> Content-Type: application/xml;ty=2 <br> X-M2M-NM: MY_SENSOR </td></tr>
-    <tr><td> Body </td><td> <om2m:ae xmlns:om2m="http://www.onem2m.org/xml/protocols"> <br> <api>app-sensor</api> <br> <lbl>Type/sensor Category/temperature Location/home</lbl> <br> <rr>false</rr> <br> </om2m:ae></td></tr>
+    <tr><td> Body </td><td> &ltom2m:ae xmlns:om2m="http://www.onem2m.org/xml/protocols"&gt <br> &emsp;  &ltapi&gt app-sensor &lt/api&gt <br> &emsp; &ltlbl&gt Type/sensor Category/temperature Location/home &lt/lbl&gt <br> &emsp; &ltrr&gt false &lt/rr&gt <br> &lt/om2m:ae&gt </td></tr>
   </table>
   
 ### RESTful Operations on the Resource Tree using Node-RED
@@ -38,5 +38,5 @@
 > Creating a subscription resource to a container in Middle Node-Application Entity using Node-RED.  
 
 * Step1: Start the Node-RED
-  * Open a new terminal and input the command: `sudonode-red -vv`
+  * Open a new terminal and input the command: `sudo node-red -vv`
   * Open http://localhost:1880
