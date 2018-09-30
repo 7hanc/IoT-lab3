@@ -17,20 +17,22 @@
    * After starting it successfully, you will see “CSE Started”
  * Step 3: Open postman
    * Retrieve a resource: 
+   * Create a "MY_SENSOR" Application:
   <table>
     <tr><td> URL</td><td> http://127.0.0.1:8282/~/mn-cse </td></tr>
     <tr><td>Method</td><td>GET</td></tr>
     <tr><td> Header </td><td> X-M2M-Origin : admin:admin </td></tr>
     <tr><td> Body </td><td> (empty)</td></tr>
   </table>
-  
-   * Create a "MY_SENSOR" Application:
    <table>
     <tr><td> URL</td><td> http://127.0.0.1:8282/~/mn-cse </td></tr>
     <tr><td>Method</td><td>POST</td></tr>
     <tr><td> Header </td><td> X-M2M-Origin: admin:admin <br> Content-Type: application/xml;ty=2 <br> X-M2M-NM: MY_SENSOR </td></tr>
     <tr><td> Body </td><td> &ltom2m:ae xmlns:om2m="http://www.onem2m.org/xml/protocols"&gt <br> &emsp;  &ltapi&gt app-sensor &lt/api&gt <br> &emsp; &ltlbl&gt Type/sensor Category/temperature Location/home &lt/lbl&gt <br> &emsp; &ltrr&gt false &lt/rr&gt <br> &lt/om2m:ae&gt </td></tr>
   </table>
+  * Step4: OM2M Resource Tree http://127.0.0.1:8282/~/mn-cse
+  <img src=https://i.imgur.com/24wOu45.png width=20% height=20%><img src=https://i.imgur.com/sFUMnKE.png width=20% height=20%>
+  
   
 ### RESTful Operations on the Resource Tree using Node-RED
 > Creating a Middle Node-Application Entity with Node-RED    
